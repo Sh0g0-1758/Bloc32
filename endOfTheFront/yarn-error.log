@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/local/bin/node /home/shogo/.cache/node/corepack/yarn/1.22.19/bin/yarn.js add htpp-server
+
+PATH: 
+  /home/shogo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/bin/Postman:/usr/bin/Postman:/usr/bin/Postman:/usr/bin/Postman
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.1.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/htpp-server: Not found
+      at params.callback [as _callback] (/home/shogo/.cache/node/corepack/yarn/1.22.19/lib/cli.js:66145:18)
+      at self.callback (/home/shogo/.cache/node/corepack/yarn/1.22.19/lib/cli.js:140890:22)
+      at Request.emit (node:events:511:28)
+      at Request.<anonymous> (/home/shogo/.cache/node/corepack/yarn/1.22.19/lib/cli.js:141862:10)
+      at Request.emit (node:events:511:28)
+      at IncomingMessage.<anonymous> (/home/shogo/.cache/node/corepack/yarn/1.22.19/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:625:28)
+      at IncomingMessage.emit (node:events:523:35)
+      at endReadableNT (node:internal/streams/readable:1367:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
