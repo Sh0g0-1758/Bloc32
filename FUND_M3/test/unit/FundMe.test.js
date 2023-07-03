@@ -21,8 +21,8 @@ const { developmentChains } = require("../../helper-hardhat-config");
 
 			describe("constructor", function () {
 				it("sets the aggregator addresses correctly", async () => {
-					const response = await fundMe.getPriceFeed();
-					assert.equal(response, mockV3Aggregator.address);
+					const response = (await fundMe.getPriceFeed());
+					assert.equal(response, mockV3Aggregator.runner.address);
 				});
 			});
 

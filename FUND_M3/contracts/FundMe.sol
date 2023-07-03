@@ -23,6 +23,7 @@ contract FundMe {
 	address[] private s_funders;
 	mapping(address => uint256) private s_addressToAmountFunded;
 	AggregatorV3Interface private s_priceFeed;
+	address mock_deployed;
 
 	// Events (we have none!)
 
@@ -46,6 +47,7 @@ contract FundMe {
 	constructor(address priceFeed) {
 		s_priceFeed = AggregatorV3Interface(priceFeed);
 		i_owner = msg.sender;
+		mock_deployed = priceFeed;
 	}
 
 	/// @notice Funds our contract based on the ETH/USD price
@@ -114,7 +116,7 @@ contract FundMe {
 		return i_owner;
 	}
 
-	function getPriceFeed() public view returns (AggregatorV3Interface) {
-		return s_priceFeed;
+	function getPriceFeed() public view returns (address) {
+		return mock_deployed;
 	}
 }
